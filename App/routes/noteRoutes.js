@@ -12,6 +12,8 @@ function hello(){
     console.log("hello");
 }
 
+
+
 noteRouter.get("/",  hello);
 noteRouter.post("/insert", noteInsert);
 noteRouter.get("/getNotes", getNotes);

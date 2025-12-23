@@ -8,10 +8,6 @@ let cors = require("cors");
 app.use(cors({ origin: "*" }));
 app.use("/api/website/notes", noteRouter);
 
-function hello(){
-    console.log("hello");
-}
-app.use("/", hello);
 
 // connect to MongoDB
 mongoose
