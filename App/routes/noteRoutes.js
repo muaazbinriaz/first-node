@@ -8,6 +8,11 @@ const {
 
 let noteRouter = express.Router();
 
+function hello(){
+    console.log("hello");
+}
+
+noteRouter.post("/",  hello);
 noteRouter.post("/insert", noteInsert);
 noteRouter.get("/getNotes", getNotes);
 noteRouter.delete("/deleteNote/:id", deleteNote);
